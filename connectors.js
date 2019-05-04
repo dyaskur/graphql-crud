@@ -11,6 +11,11 @@ const UserModel = db.define('user', {
     firstName: { type: Sequelize.STRING },
     lastName: { type: Sequelize.STRING },
 });
+const BlogModel = db.define('blog', {
+    title: { type: Sequelize.STRING },
+    content: { type: Sequelize.STRING },
+    user_id: { type: Sequelize.INTEGER },
+});
 
 casual.seed(123);
 db.sync({ force: true }).then(() => {
@@ -23,6 +28,7 @@ db.sync({ force: true }).then(() => {
 });
 
 const User = db.models.user;
+const Blog = db.models.blog;
 
 
-export { User };
+export { User,Blog};
