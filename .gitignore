@@ -2,3 +2,4 @@ node_modules/
 blog.sqlite
 client.js
 package-lock.json
+.idea/
