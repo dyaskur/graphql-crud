@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import schema from './schema';
 import cors from 'cors';
 
-const GRAPHQL_PORT = 80;
+const GRAPHQL_PORT = 8080;
 
 const graphQLServer = express();
 graphQLServer.use('*', cors({ origin: 'http://192.168.1.1:4000' }));
